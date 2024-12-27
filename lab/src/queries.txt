@@ -1,0 +1,29 @@
+СОЗДАНИЕ НОВОЙ ЗАПИСИ
+node src/fs/create.js "Тренировка на выносливость" "60 минут" "Кардио" "Тренировка в парке"
+
+ПРОСМОТР ВСЕХ ЗАПИСЕЙ
+node src/fs/list.js
+
+ЧТЕНИЕ ИНФОРМАЦИИ О ЗАПИСИ ПО ID
+node src/fs/read.js <id> 
+
+УДАЛЕНИЕ ЗАПИСИ ПО ID
+node src/fs/delete.js <id> 
+
+ПЕРЕИМЕНОВАНИЕ ЗАПИСИ
+node src/fs/rename.js "workout_1234567890.json" "workout_renamed.json"
+
+КОПИРОВАНИЕ ПАПКИ
+node src/fs/copy.js ./src/data ./src/backup
+
+ЧТЕНИЕ ФАЙЛА
+node src/streams/read.js ./src/data/input.txt
+
+ЗАПИСЬ ДАННЫХ В ФАЙЛ
+node src/streams/write.js ./src/data/output.txt "111111111111111111111111"
+
+ПРЕОБРАЗОВАНИЕ ДАННЫХ
+node src/streams/transform.js
+
+ПРОВЕРКА ИСПОЛЬЗОВАНИЯ WT ПОИСК ПО КЛЮЧЕВОМУ СЛОВУ В НАЗВАНИИ
+node src/wt/spawn.js "ключевое слово"
